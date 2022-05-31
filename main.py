@@ -2,9 +2,8 @@ import argparse
 import telnetlib
 import socket
 import sys
-from time import sleep
 
-
+#
 def trigger_camera(host, port, timeout): 
     tn = telnetlib.Telnet(host, port, timeout)
     msg = ('||>TRIGGER ON\r\n'.encode('ascii'))
