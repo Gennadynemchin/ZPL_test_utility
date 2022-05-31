@@ -3,7 +3,7 @@ import telnetlib
 import socket
 import sys
 
-#
+
 def trigger_camera(host, port, timeout): 
     tn = telnetlib.Telnet(host, port, timeout)
     msg = ('||>TRIGGER ON\r\n'.encode('ascii'))
